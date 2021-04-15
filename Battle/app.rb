@@ -25,5 +25,9 @@ class Battle < Sinatra::Base
     erb :play
   end
 
+  post '/hit' do
+    erb :hit
+  end
+
   run! if app_file == $0
 end
